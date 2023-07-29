@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A página off-time</title>
+    <link rel="stylesheet" href="./LIB/bootstrap.min.css" />
+    <style>
+        .navbar-nav .nav-link.active {
+            color: #fff;
+        }
+
+        .nav-link {
+            text-align: center;
+        }
+
+        section {
+            height: 100vh;
+            background: #ccc;
+            padding-top: 70px;
+        }
+
+        header {
+            background-color: #fff;
+        }
+
+        .custom-img {
+            max-width: 600px;
+            /* Defina o valor de largura desejado */
+        }
+    </style>
+</head>
+
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Sporting's and Racer's</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#inicio">Inicio</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <!-- Deixei a div vazia apenas para fins de espaçamento -->
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div id="carousel-page" class="carousel-fade carousel slide">
+                    <div class="carousel-inner" data-bs-ride="carousel">
+                        <div data-bs-interval="3000" class="carousel-item active">
+                            <img class="d-block w-100" src="LIB/imagens/car-63930_640.jpg" alt="Farol mustang gt" />
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img class="d-block w-100" src="LIB/imagens/car-1376190_640.jpg"
+                                alt="mustang gt vermelho" />
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img class="d-block w-100" src="LIB/imagens/ford-2705402_640.jpg" alt="Audi branco" />
+                        </div>
+                    </div>
+                    <button data-bs-target="#carousel-page" data-bs-slide="prev" class="carousel-control-prev"
+                        type="button">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button data-bs-target="#carousel-page" data-bs-slide="next" class="carousel-control-next"
+                        type="button">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-page" class="active"
+                            data-bs-slide-to="0"></button>
+                        <button type="button" data-bs-target="#carousel-page" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel-page" data-bs-slide-to="2"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <!-- Deixei a div vazia apenas para fins de espaçamento -->
+            </div>
+        </div>
+
+        <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+            <div id="inicio" class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Mustang GT</h4>
+                            <img src="LIB/imagens/mustang-2338351_640.jpg" alt="mustang gt" class="custom-img" />
+                            <h5 class="card-subtitle">Subtítulo do card</h5>
+                            <p class="card-text">
+                                O Mustang GT é um carro icônico e seu estilo atual muito tem
+                                do original dos anos 60. Mantendo um estilo fastback e também
+                                conversível, o bólido da Ford materializa o que foi a era dos
+                                pony cars nos EUA, que eram pequenos carros muscle car com
+                                capô longo, duas portas e traseira curta.<br />
+                                Atualmente é avaliado em R$ 566.300.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Ferrari Spider</h4>
+                            <img src="LIB/imagens/ferrari-458-spider-2932191_640.jpg" alt="ferrari spider"
+                                class="custom-img" />
+                            <h5 class="card-subtitle">Ferrari Italia Spider 458</h5>
+                            <p class="card-text">
+                                A Ferrari 458 Italia é um modelo esportivo da Ferrari. Suas
+                                primeiras fotos foram divulgadas pela Ferrari em 28 de julho
+                                de 2009 e será apresentado no Salão do Automóvel de Frankfurt.
+                                É o sucessor do Ferrari F430 e em 2015 foi substituído pelo
+                                Ferrari 488 GTB, que foi revelado no Salão Internacional do
+                                Automóvel de Genebra 2015.<br />
+                                Atualmente é avaliado em R$ 2.900.965 Preço que representa a
+                                média de veículos no mercado nacional.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 d-md-none">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">McLaren</h4>
+                            <img src="LIB/imagens/mclaren-4223024_1280.jpg" alt="McLaren" class="custom-img" />
+                            <h5 class="card-subtitle">McLaren 765LT</h5>
+                            <p class="card-text">
+                                McLaren Automotive (anteriormente conhecida como McLaren Cars)
+                                é uma montadora britânica, criada em 1969 por Bruce McLaren
+                                como um fabricante de carros de rua com tecnologia da Fórmula
+                                1. Está sediada na McLaren Technology Campus em Woking,
+                                Surrey. Ela produz e fabrica carros esportivos e de luxo,
+                                geralmente produzidos internamente em instalações de produção
+                                designadas. Em julho de 2017, a McLaren Automotive tornou-se
+                                uma subsidiária 100% parte do grupo McLaren.
+                                <br />O valor dessa máquina é de US$ 380.000,00 dólares, que
+                                ficaria perto dos 2 milhões de reais convertidos diretamente,
+                                porém na prática você irá encontrar esse carro por mais de 6
+                                milhões de reais, valor salgado, entretanto extremamente
+                                exclusivo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./LIB/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
